@@ -1,0 +1,87 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SQLQuery1.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="MySql.Data" Version="8.0.27" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Branch\Controllers\" />
+    <Folder Include="Areas\Branch\Data\" />
+    <Folder Include="Areas\Branch\Models\" />
+    <Folder Include="Areas\Branch\Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\css\bootstrap.css" />
+    <None Include="wwwroot\assets\css\demo.css" />
+    <None Include="wwwroot\assets\css\demo.css.map" />
+    <None Include="wwwroot\assets\css\main.css" />
+    <None Include="wwwroot\assets\css\main.css.map" />
+    <None Include="wwwroot\assets\img\login-bg.jpg" />
+    <None Include="wwwroot\assets\scripts\jquery-library.js" />
+    <None Include="wwwroot\assets\scripts\klorofil-common.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-theme.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\npm.js" />
+    <None Include="wwwroot\assets\vendor\chartist\css\chartist-custom.css" />
+    <None Include="wwwroot\assets\vendor\chartist\css\chartist-custom.css.map" />
+    <None Include="wwwroot\assets\vendor\chartist\css\chartist.css" />
+    <None Include="wwwroot\assets\vendor\chartist\css\chartist.min.css" />
+    <None Include="wwwroot\assets\vendor\chartist\js\chartist.js" />
+    <None Include="wwwroot\assets\vendor\chartist\js\chartist.min.js" />
+    <None Include="wwwroot\assets\vendor\chartist\map\chartist.css.map" />
+    <None Include="wwwroot\assets\vendor\chartist\map\chartist.min.js.map" />
+    <None Include="wwwroot\assets\vendor\chartist\scss\chartist.scss" />
+    <None Include="wwwroot\assets\vendor\font-awesome\css\font-awesome.css" />
+    <None Include="wwwroot\assets\vendor\font-awesome\css\font-awesome.min.css" />
+    <None Include="wwwroot\assets\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\assets\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\assets\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\assets\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\assets\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\assets\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\assets\vendor\jquery-slimscroll\jquery.slimscroll.js" />
+    <None Include="wwwroot\assets\vendor\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\angular.easypiechart.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\angular.easypiechart.min.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\easypiechart.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\easypiechart.min.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\jquery.easypiechart.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\jquery.easypiechart.min.js" />
+    <None Include="wwwroot\assets\vendor\jquery\jquery.js" />
+    <None Include="wwwroot\assets\vendor\jquery\jquery.min.js" />
+    <None Include="wwwroot\assets\vendor\jquery\jquery.min.map" />
+    <None Include="wwwroot\assets\vendor\linearicons\fonts\Linearicons-Free.eot" />
+    <None Include="wwwroot\assets\vendor\linearicons\fonts\Linearicons-Free.svg" />
+    <None Include="wwwroot\assets\vendor\linearicons\fonts\Linearicons-Free.ttf" />
+    <None Include="wwwroot\assets\vendor\linearicons\fonts\Linearicons-Free.woff" />
+    <None Include="wwwroot\assets\vendor\linearicons\fonts\Linearicons-Free.woff2" />
+    <None Include="wwwroot\assets\vendor\linearicons\style.css" />
+    <None Include="wwwroot\assets\vendor\toastr\toastr.css" />
+    <None Include="wwwroot\assets\vendor\toastr\toastr.js" />
+    <None Include="wwwroot\assets\vendor\toastr\toastr.min.css" />
+    <None Include="wwwroot\assets\vendor\toastr\toastr.min.js" />
+  </ItemGroup>
+
+</Project>
