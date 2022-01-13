@@ -1,0 +1,59 @@
+﻿@model InventoryApplication.Areas.Admin.Models.StateModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    @using (Html.BeginForm("Index", "State", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>
+                    Fruit:
+                </td>
+                <td>
+                    @Html.DropDownListFor(m => m.Countryid, Model.Countrys, "Please select")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Quantity:
+                </td>
+                <td>
+                    @Html.TextBoxFor(m => m.StateName)
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    }
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript">
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+    }
+</body>
+</html>

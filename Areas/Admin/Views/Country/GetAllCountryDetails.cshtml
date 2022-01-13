@@ -1,0 +1,52 @@
+﻿@model IEnumerable<InventoryApplication.Areas.Admin.Models.CountryModel>
+
+@{
+    ViewData["Title"] = "GetAllCountryDetails";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GetAllCountryDetails</h2>
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div class="container-fluid">
+
+            <div id="toastr-demo" class="panel">
+
+
+                <p style="text-align:center">
+                    @Html.ActionLink("Add New Country", "AddCountry")
+                </p>
+
+                <table class="table">
+                    <tr>
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </th>
+
+                        <th></th>
+                    </tr>
+
+                    @foreach (var item in Model)
+                    {
+                        @Html.HiddenFor(model => item.Id)
+                        <tr>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+
+                            <td>
+                                @Html.ActionLink("Edit", "EditCountryDetails", new { id = item.Id }) |
+                                @Html.ActionLink("Delete", "DeleteCountry", new { id = item.Id }, new { onclick = "return confirm('Are sure wants to delete?');" })
+                            </td>
+                        </tr>
+
+                    }
+
+                </table>
+                </div>
+</div>
+</div>
+</div>
